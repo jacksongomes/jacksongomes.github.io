@@ -12,6 +12,7 @@
 		<script>
 		$.ajax({
 			url: 'https://api.behance.net/v2/projects?q=motorcycle&client_id=1234567890',
+			dataType: 'json',
 			beforeSend: function () {
 				console.log('beforeSend');
 			},
