@@ -1,31 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Behance Test</title>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+	<head runat="server">
+
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta charset="utf-8">
+
+		<title>Jackson Gomes - Site em Desenvolvimento</title>
+
+	    <meta http-equiv="cleartype" content="on">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="MobileOptimized" content="320">
+	    <meta name="format-detection" content="telephone=no" />
+	    <meta name="msapplication-tap-highlight" content="no"/> 
+	    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	    <meta name="robots" content="index, follow">
+	    <meta name="google" content="notranslate">
+	    <meta name="author" content="Ceicom ® www.ceicom.com.br">
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta name="revisit-after" content="1">
+
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				background: url(img/bg.jpg) no-repeat top center;
+				font-family: 'Open Sans', sans-serif;
+				position: relative;
+			}
+
+			.logotype {
+				display: block;
+				width: 250px;
+				height: 81px;
+				margin: 0 auto;
+				margin-top: 15%;
+			}
+
+			.phrase {
+				text-align: center;
+				color: #fff;
+				font-weight: 300;
+				text-transform: uppercase;
+				margin-top: 5%;
+			}
+
+			.mail {
+				display: block;
+				text-align: center;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #fff;
+				position: fixed;
+				bottom: 2%;
+				left: 1%;
+				font-size: 13px; 
+				transition: .5s;
+			}
+
+			.mail:hover {
+				color: #000;
+			}
+
+			.made {
+				font-weight: 300;
+				font-size: 13px; 
+				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+				color: #fff;
+				position: fixed;
+				bottom: 2%;
+				right: 1%;
+				margin: 0;
+			}
+
+			.made > a {
+				text-decoration: none;
+				color: #fff;
+				transition: .5s;
+			}
+
+			.made > a:hover {
+				color: #000;
+			}
+
+			.made > i {
+				color:#e74c3c;
+				display:inline-block;
+				font-size:1.4em;
+				position:relative;
+				top:.1em;
+				-webkit-transform:scale(.9);
+				-moz-transform:scale(.9)
+				;transform:scale(.9);
+				-webkit-animation:love .5s infinite linear alternate-reverse;
+				-moz-animation:love .5s infinite linear alternate-reverse;
+				animation: love .5s infinite linear alternate-reverse}
+				@-webkit-keyframes love{to{-webkit-transform:scale(1.2)}}
+				@-moz-keyframes love{to{-moz-transform:scale(1.2)}}
+				@keyframes love{to{transform:scale(1.2)}}
+			}
+		</style>
 	</head>
 	<body>
+		<img src="img/logotype.png" class="logotype" alt="Jackson Gomes - Web Designer & Developer">
+		<h2 class="phrase">Site em desenvolvimento</h2>
 
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-		<script>
-		$.ajax({
-			url: 'http://www.behance.net/v2/users/wyllyan/projects?callback=?&api_key=JbYApLDaECLjBHqCnzQZwkSbqNhbsfK9',
-			dataType: 'json',
-			beforeSend: function () {
-				console.log('beforeSend');
-			},
-			complete: function () {
-				console.log('complete');
-			},
-			error: function () {
-				console.log('error');
-			},
-			success: function (data) {
-				console.log(data);
-			}
-		});
-		</script>
+		<a href="mailto:belmoure@gmail.com" class="mail" title="Enquanto o site não fica pronto, envie-me um e-mail">Envie-me um e-mail</a>
+		<h2 class="made">Made with <i>♥</i> by <a href="http://twitter.com/jacksongomes_" title="Follow on Twitter" target="_blank\">Jackson Gomes</a></h2>
 	</body>
 </html>
