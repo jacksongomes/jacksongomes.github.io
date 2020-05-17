@@ -5,7 +5,7 @@
 	var $projects = $('#jobs');
 
 	$.ajax({
-		url: 'http://www.behance.net/v2/users/jacksongomes/projects?callback=?&api_key=NImk7OcbDeeem5xB1nuDnRvun3sQJP2k',
+		url: 'https://www.behance.net/v2/users/jacksongomes/projects?callback=?&api_key=NImk7OcbDeeem5xB1nuDnRvun3sQJP2k',
 		dataType: 'json',
 		beforeSend: function () {
 			console.log('beforeSend');
